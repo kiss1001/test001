@@ -1,0 +1,28 @@
+
+### test
+POST http://localhost/api/active/getBanners
+
+{
+    "client_id":1
+}
+
+### 用户注册
+POST https://test.jdbishang.com/Login?token=yPMZAXZerLBQZ52yGLpCjzDX&captcha=bnge
+
+{
+    "accountName":"13959159766",
+    "password":"123456"
+}
+
+### 用户登录
+POST https://test.jdbishang.com/api/User/Login?captcha=elet
+Content-Type: application/json
+
+{
+    "accountName":"13959159766",
+    "password":"123456"
+}
+
+### 请求我的信息
+GET https://test.jdbishang.com/api/User/Me
+x-rainier-ticket: tkn:db:so1KmlLpTG7rhnGCPY7U-MyxEiTehiGJT59lHhZNbxz7hc9RASOHtUQ0laxViMaJoxJ8kyWkDIhUpTc0qX8nTg
